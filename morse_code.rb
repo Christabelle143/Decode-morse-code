@@ -32,3 +32,4 @@ def decode_message(message)
   end
   final
 end
+print decode_char('.-')

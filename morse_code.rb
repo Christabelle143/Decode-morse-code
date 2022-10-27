@@ -15,3 +15,19 @@ def decode_char(character)
         result
     end
 
+    
+     def decode_message(message
+        new_message = message.gsub('/', ' '))
+        message_array = new_message.split(/   /, -1)
+        final = ''
+   message_array.each do |j|
+    final = if final == ''
+        decode_word(j).to_s
+    else
+        new_word = decode_word(j).to_s
+       "#{final} #{new_word}"
+    end
+    end
+   final
+end
+

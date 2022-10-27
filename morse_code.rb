@@ -4,6 +4,7 @@ def decode_char(character)
                  U: '..-', V: '...-', W: '.--', X: '-..-', Y: '-.--', Z: '--..' }
   code_morse.each do |key, value|
     next unless value == character
+
     return key
   end
 end
